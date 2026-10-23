@@ -1,0 +1,207 @@
+/**
+ * Le Charbon Layout & Component Core Styles — Dark Fire Premium
+ */
+
+/* General font & color setup */
+body {
+  background-color: var(--color--charcoal-black);
+  color: var(--color--warm-ivory);
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: 0.03em;
+}
+
+.font-mono-pp {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Nav */
+.nav-header {
+  height: var(--size--nav-height-desktop);
+  background-color: var(--color--charcoal-black);
+  border-bottom: 1px solid var(--color--smoke-grey);
+}
+
+@media (max-width: 767px) {
+  .nav-header {
+    height: var(--size--nav-height-mobile);
+  }
+}
+
+/* Buttons */
+.btn-primary {
+  background: linear-gradient(135deg, #E57A2E 0%, #C6401C 100%);
+  color: #FFFFFF;
+  border-radius: 9999px;
+  text-transform: uppercase;
+  font-family: var(--font-display);
+  font-size: clamp(0.85rem, 2vw, 0.95rem);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding: 0.75rem 1.6rem;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid rgba(242, 163, 74, 0.3);
+  box-shadow: 0 4px 14px rgba(229, 122, 46, 0.25);
+  cursor: pointer;
+  white-space: nowrap;
+  touch-action: manipulation;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #F2A34A 0%, #E57A2E 100%);
+  box-shadow: 0 6px 20px rgba(229, 122, 46, 0.4);
+  transform: translateY(-1px);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+  background: #C6401C;
+}
+
+.btn-secondary {
+  border: 1px solid var(--color--smoke-grey);
+  background-color: var(--color--deep-anthracite);
+  color: var(--color--warm-ivory);
+  border-radius: 9999px;
+  text-transform: uppercase;
+  font-family: var(--font-display);
+  font-size: clamp(0.85rem, 2vw, 0.95rem);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding: 0.75rem 1.6rem;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  white-space: nowrap;
+  touch-action: manipulation;
+}
+
+.btn-secondary:hover {
+  border-color: var(--color--fire-orange) !important;
+  color: var(--color--fire-orange);
+  background-color: #1F1712;
+  transform: translateY(-1px);
+}
+
+.btn-secondary:active {
+  transform: translateY(0);
+  background-color: #161616;
+}
+
+.btn-whatsapp {
+  border: 1px solid rgba(37, 211, 102, 0.4);
+  background-color: #25D366;
+  color: #FFFFFF;
+  border-radius: 9999px;
+  text-transform: uppercase;
+  font-family: var(--font-display);
+  font-size: clamp(0.85rem, 2vw, 0.95rem);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding: 0.75rem 1.6rem;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.25);
+  white-space: nowrap;
+  touch-action: manipulation;
+}
+
+.btn-whatsapp:hover {
+  background-color: #1EBE5D;
+  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.4);
+  transform: translateY(-1px);
+}
+
+.btn-whatsapp:active {
+  transform: translateY(0);
+  background-color: #128C7E;
+}
+
+/* Headings */
+h1.hero-display {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 9vw, 8rem);
+  line-height: 1.05;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+h2.section-heading-huge {
+  font-family: var(--font-display);
+  font-size: clamp(2.25rem, 6vw, 6rem);
+  line-height: 1.05;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+/* Marquee text stroke */
+.marquee__text.is-text-stroke {
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(229, 122, 46, 0.6);
+}
+
+/* Hero Section Plate and Image */
+.hero-circle-mask {
+  clip-path: circle(18.5rem at 50% 50%);
+  transition: clip-path 1s cubic-bezier(0.165, 0.84, 0.44, 1), top 0.5s ease-out;
+}
+
+@media (max-width: 767px) {
+  .hero-circle-mask {
+    clip-path: circle(10.7rem at 50% 50%);
+  }
+}
+
+.hero-circle-mask.expanded {
+  clip-path: circle(100rem at 50% 50%) !important;
+  top: 0 !important;
+}
+
+/* Subtle ember glow utility */
+.ember-glow {
+  box-shadow: 0 0 35px -5px rgba(229, 122, 46, 0.25);
+}
+
+.ember-glow-strong {
+  box-shadow: 0 0 50px 0 rgba(229, 122, 46, 0.4);
+}
+
+/* Modal backdrop & styling */
+.modal-backdrop-blur {
+  background: rgba(11, 11, 11, 0.85);
+  backdrop-filter: blur(8px);
+}
+
+/* Swiper custom overrides for dark fire theme */
+.swiper-pagination-bullet {
+  background: #2A2A2A !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #E57A2E !important;
+  width: 24px !important;
+  border-radius: 9999px !important;
+}

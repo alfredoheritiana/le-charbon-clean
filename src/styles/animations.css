@@ -1,0 +1,65 @@
+/**
+ * Le Charbon Keyframes and Motion Styles
+ */
+
+@keyframes text-right-to-left-2 {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes text-left-to-right-2 {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0%); }
+}
+
+@keyframes text-marquee-location {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0%); }
+}
+
+@keyframes rotateText {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes circleTextRotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(-360deg); }
+}
+
+.marquee__track.to-right {
+  animation: text-left-to-right-2 40s linear infinite;
+  display: flex;
+  white-space: nowrap;
+  width: max-content;
+}
+
+.marquee__track.to-left {
+  animation: text-right-to-left-2 40s linear infinite;
+  display: flex;
+  white-space: nowrap;
+  width: max-content;
+}
+
+.marquee__track.to-right.in-location {
+  animation: text-marquee-location 25s linear infinite both;
+  display: flex;
+  white-space: nowrap;
+  width: max-content;
+}
+
+.marquee-wrap.in-location:hover .marquee__track.to-right.in-location {
+  animation-play-state: paused;
+}
+
+.contact-us-text-rotating {
+  animation: rotateText 10s linear infinite;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .marquee__track,
+  .contact-us-text-rotating {
+    animation: none !important;
+  }
+}

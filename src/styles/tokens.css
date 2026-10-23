@@ -1,0 +1,65 @@
+/**
+ * Le Charbon Design System Tokens — Dark Fire Premium
+ * Ground truth from Master Prompt & COMPANION__LE_CHARBON__ESSENTIAL.txt
+ */
+
+:root {
+  /* Brand Color Palette */
+  --color--charcoal-black: #0B0B0B;
+  --color--deep-anthracite: #161616;
+  --color--smoke-grey: #2A2A2A;
+  --color--warm-ivory: #F3EDE2;
+  --color--ember-red: #C6401C;
+  --color--fire-orange: #E57A2E;
+  --color--warm-amber: #F2A34A;
+
+  /* Semantic Aliases */
+  --color--primary-bg: #0B0B0B;
+  --color--surface-card: #161616;
+  --color--surface-border: #2A2A2A;
+  --color--text-primary: #F3EDE2;
+  --color--text-muted: #A39D93;
+  --color--accent-ember: #C6401C;
+  --color--accent-fire: #E57A2E;
+  --color--accent-amber: #F2A34A;
+
+  /* Backwards-compatibility mappings for clean component rendering */
+  --color--primary-beige: #0B0B0B;
+  --color--primary-black: #F3EDE2;
+  --color--primary-blue: #E57A2E;
+  --color--primary-white: #0B0B0B;
+  --color--shades-dark-red: #C6401C;
+  --color--secondary-red: #E57A2E;
+  --color--secondary-yellow: #F2A34A;
+  --color--secondary-grey: #2A2A2A;
+  --color--shades-dark-blue: #C6401C;
+  --color--shades-light-blue: #F2A34A;
+  --color--secondary-light-blue: #1C1C1E;
+  --color--light-blue-300: #2A2A2A;
+  --color--tertiary-light-blue: #E57A2E;
+  --color--green: #25D366;
+  --color--green-200: #1EBE5D;
+  --color--green-300: #128C7E;
+  --color--transparent: transparent;
+
+  /* Dimensions */
+  --size--nav-height-desktop: 5.5rem;
+  --size--nav-height-mobile: 4.25rem;
+  --size--hero-circle-mobile: 11rem;
+  --size--hero-circle-mobile-top: -1rem;
+
+  /* Safe Area Insets */
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-left: env(safe-area-inset-left, 0px);
+  --safe-right: env(safe-area-inset-right, 0px);
+
+  /* Typography Stack */
+  --font-display: 'Oswald', 'Barlow Condensed', sans-serif;
+  --font-body: 'DM Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'Space Mono', monospace;
+
+  /* Legacy variable aliases */
+  --pp-font-display: var(--font-display);
+  --pp-font-mono: var(--font-mono);
+}

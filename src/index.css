@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@import "./styles/tokens.css";
+@import "./styles/layout.css";
+@import "./styles/animations.css";
+
+/* Reset & custom overrides */
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  background-color: var(--color--charcoal-black);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: var(--color--charcoal-black);
+  color: var(--color--warm-ivory);
+  font-family: var(--font-body);
+}
+
+::selection {
+  background-color: var(--color--fire-orange);
+  color: #0B0B0B;
+}
